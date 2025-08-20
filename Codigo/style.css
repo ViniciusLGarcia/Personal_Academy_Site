@@ -128,6 +128,64 @@ nav .menu-btn{
      background-color: #FFF;
      border-color: #4070F4;
 }
+/*About Me Section CSS*/
+.about  .content{
+    width: 80%;
+    margin: 40px auto;
+    font-family: 'Poppins', sans-serif;
+
+}
+.about .title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+
+}
+.about .title span{
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+}
+.about .title span:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: #4070F4;
+}
+
+.about .title span::after{
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -7px;
+}
+.about .about-details{
+    display: flex;
+    justify-content: space-between;
+
+}
+.about .about-details .right{
+    width: 45%;
+
+}
+.about .about-details .right img{
+    height: 400px;
+    width: 400;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.about .about-details .left{
+width: 55%; 
+}
+.about .about-details .topic{
+    font-size: 25px;
+    font-weight: 500;
+    color: #0E2431;
+
+}
 
 /* Response Media Query CSS */
 @media (max-width: 750px) {
