@@ -1,11 +1,12 @@
 /* Google Font CDN Link */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display+swa')
-{ 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-     text-decoration: none;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display+swa');{
+    margin 0;
+    padding 0;
+    box-sizing border-box
+     text-decoration none
 }
+    
+
 /* Navigation Menu CSS */
 nav{
     position: fixed;
