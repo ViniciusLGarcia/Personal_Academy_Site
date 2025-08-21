@@ -1,9 +1,10 @@
 /* Google Font CDN Link */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display+swa');{
-    margin 0;
-    padding 0;
-    box-sizing border-box
-     text-decoration none
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display+swa');
+{
+    margin: 0;
+    padding: 0;
+    box-sizing border-box;
+     text-decoration none;
 }
     
 
@@ -135,90 +136,7 @@ nav .menu-btn{
 }
 /*About Me Section CSS*/
 /*Those element where we need to apply same  css their i will select "Section Tag" and "Class" Directly*/
-.about  .content{
-    width: 80%;
-    margin: 40px auto;
-    font-family: 'Poppins', sans-serif;
 
-}
-section .title{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 40px;
-
-}
-section.title span{
-    font-size: 30px;
-    font-weight: 600;
-    position: relative;
-}
-section.title span:before,
-section.title span:after{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 3px;
-    width: 100%;
-    background: #4070F4;
-}
-
-section.title span::after{
-    width: 70%;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -7px;
-}
-.about .about-details{
-    display: flex;
-    justify-content: space-between;
-
-}
-.about .about-details .right{
-    width: 45%;
-
-}
-.about .about-details .right img{
-    height: 400px;
-    width: 400;
-    object-fit: cover;
-    border-radius: 12px;
-}
-.about .about-details .left{
-width: 55%; 
-}
-section.topic{
-    font-size: 25px;
-    font-weight: 500;
-    color: #0E2431;
-    margin-bottom: 10px;
-
-}
-            
-.about .about-details .left .p
-{
-    color: #0E2431;
-    text-align: justify;
-}
-section.button{
-    margin: 14px 0;
-}              
-section.button button{
-   outline: none;
-   color: #FFF;
-   font-size: 25px;
-   font-weight: 500;
-   padding: 8px 16px;
-   background:#4070F4;
-   border: 2px solid transparent;
-   border-radius: 5px;
-   transition: all 0.4s ease;
-}
-section.button button:hover{
-     color:#4070F4;
-     background-color: #FFF;
-     border-color: #4070F4;
-}
 
 /* Response Media Query CSS */
 @media (max-width: 750px) {
