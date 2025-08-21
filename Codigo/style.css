@@ -97,12 +97,14 @@ nav .menu-btn{
     justify-content: center;
 }
 .home .text .text-one{
-   font-size: 25px; 
+   font-size: 25px;
+   color: #0E2431; 
 }
 .home .text .text-two{
    font-size: 75px; 
    font-weight: 600;
    margin-left: -3px;
+   color: #0E2431;
 }
 .home .text .text-three{
    font-size: 40px;
@@ -110,6 +112,7 @@ nav .menu-btn{
 .home .text .text-four{
    font-size: 23px;
    margin: 5px 0;
+   color: #0E2431;
 }
 .home .button{
     margin: 14px 0;
@@ -131,24 +134,26 @@ nav .menu-btn{
      border-color: #4070F4;
 }
 /*About Me Section CSS*/
+/*Those element where we need to apply same  css their i will select "Section Tag" and "Class" Directly*/
 .about  .content{
     width: 80%;
     margin: 40px auto;
     font-family: 'Poppins', sans-serif;
 
 }
-.about .title{
+section .title{
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
 
 }
-.about .title span{
+section.title span{
     font-size: 30px;
     font-weight: 600;
     position: relative;
 }
-.about .title span:before{
+section.title span:before,
+section.title span:after{
     content: '';
     position: absolute;
     left: 0;
@@ -158,7 +163,7 @@ nav .menu-btn{
     background: #4070F4;
 }
 
-.about .title span::after{
+section.title span::after{
     width: 70%;
     left: 50%;
     transform: translateX(-50%);
@@ -182,11 +187,37 @@ nav .menu-btn{
 .about .about-details .left{
 width: 55%; 
 }
-.about .about-details .topic{
+section.topic{
     font-size: 25px;
     font-weight: 500;
     color: #0E2431;
+    margin-bottom: 10px;
 
+}
+            
+.about .about-details .left .p
+{
+    color: #0E2431;
+    text-align: justify;
+}
+.home .button{
+    margin: 14px 0;
+}              
+.home .button button{
+   outline: none;
+   color: #FFF;
+   font-size: 25px;
+   font-weight: 500;
+   padding: 8px 16px;
+   background:#4070F4;
+   border: 2px solid transparent;
+   border-radius: 5px;
+   transition: all 0.4s ease;
+}
+.home .button button:hover{
+     color:#4070F4;
+     background-color: #FFF;
+     border-color: #4070F4;
 }
 
 /* Response Media Query CSS */
