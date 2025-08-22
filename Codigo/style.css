@@ -130,6 +130,7 @@ nav .menu-btn{
     background-color: #FFF;
     border-color: #4070F4;
 }
+
 /*About Me Section CSS*/
 /*Those element where we need to apply same  css their i will select "Section Tag" and "Class" Directly*/
 .about .content{
@@ -155,7 +156,7 @@ section .title span{
     position: relative;
 
 }
-section .title span::before,
+
 section .title span::after{
     content: '';
     position: absolute;
@@ -165,13 +166,14 @@ section .title span::after{
     width: 100%;
     background:#4070F4 ;
 }
+
 section .title span::after{
     width: 70%;
     left: 50%;
     transform: translateX(-50%);
     bottom: -7px;
-
 }
+
 .about .about-details{
     display: flex;
     align-items: center;
@@ -191,9 +193,8 @@ section .title span::after{
 }
 .about .about-details .left{
     width: 55%;
-
-
 }
+
 section .topic{
     font-size: 25px;
     font-weight: 500;
@@ -228,40 +229,40 @@ section .button button:hover{
 
 /* Response Media Query CSS */
 @media (max-width: 1190px){
-        .about .content{
-            width: 85%;
-        }
-        .skills .content{
-            width: 90%;
-        } /*grupo referente a minha parte do código skills*/
+    .about .content{
+        width: 85%;
     }
+    .skills .content{
+        width: 90%;
+    } /*grupo referente a minha parte do código skills*/
+}
+
 @media (max-width: 1090px){
-.about .about-details{
-    flex-direction: column;
-
+    .about .about-details{
+        flex-direction: column;
     }
+
     .about .about-details .right{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
-
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
+
     .about .about-details .left{
-    width: 90%;
-    margin: 40px 0 ;
-
+        width: 90%;
+        margin: 40px 0 ;
     }
 }
+
 @media (max-width: 971px){
-.about .about-details .right .img{
-    height: 350px;
-    width: 350px;
-    object-fit: cover;
-    border-radius: 12px;
-
-    }
+    .about .about-details .right .img{
+        height: 350px;
+        width: 350px;
+        object-fit: cover;
+        border-radius: 12px;
+        }
 }
+
 @media (max-width: 750px) {
     nav .navbar .menu{
         left: -100%;
@@ -275,36 +276,38 @@ section .button button:hover{
         padding-top: 60px;
         transition: all 0.5s ease;
     }
-nav .navbar.active .menu{
-    left: 0;
-}
+    nav .navbar.active .menu{
+        left: 0;
+    }
     .navbar .menu li a{
-    display: block;
-    margin: 10px 0;
-    font-size: 23px;
-    color: #fff
-}
-.navbar .media-icons a{
-    display: none;
-}
-nav .menu-btn,
-    .navbar .cancel-btn{
-    display: block;
-}
-.home .text .text-two{
-    font-size: 65px; 
-}
-.home .text .text-three{
-    font-size: 35px;
-}
+        display: block;
+        margin: 10px 0;
+        font-size: 23px;
+        color: #fff
+    }
+    .navbar .media-icons a{
+        display: none;
+    }
+    nav .menu-btn,
+        .navbar .cancel-btn{
+        display: block;
+    }
+    .home .text .text-two{
+        font-size: 65px; 
+    }
+    .home .text .text-three{
+        font-size: 35px;
+    }
+
 }
 @media (max-width: 510px){
     .home .text .text-two{
         font-size: 55px;
-}
+    }
+
     .home .text .text-three{
         font-size: 33px;
-}
+    }
 }
 
 .skills .skills-details{
@@ -353,7 +356,7 @@ nav .menu-btn,
     font-weight: 500;
 }
 
-    .skills .skills-details .left .experience .exp{
+.skills .skills-details .left .experience .exp{
     font-size: 18px;
     color: #0E2431;
     font-weight: 500;
@@ -365,10 +368,10 @@ nav .menu-btn,
 }
 
 .skills .skills-details .boxes{
-width: 45%;
-display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .skills .skills-details .boxes .box{
