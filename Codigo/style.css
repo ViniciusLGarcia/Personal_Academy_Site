@@ -221,8 +221,44 @@ section .button button:hover{
     background-color: #FFF; 
     border-color: #4070F4;
 }
+/* My Service Section CSS */
+.services .boxes{
+    display: flex;
+    justify-content: space space-between;
+    flex-wrap: wrap;
+}
+.services .boxes .box{
+    width: calc(100% / 3 - 20px);
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    padding: 20px 10px;
+    transition: all 0.4s ease;
+}
+.services .boxes .box:hover{
+    background: #4070f4;
+    color: #fff;
 
-
+}
+.services .boxes .box .icon{
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    background-color: #4070f4;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 auto 10px auto;
+    transition: all 0.4s ease;
+}
+.services .boxes .box:hover .icon{
+    background: #fff;
+    color: #4070f4;
+}
+.services .boxes .box:hover .topic{
+    color:#FFF;
+}
 /* Response Media Query CSS */
 @media (max-width: 1190px){
     .about .content{
@@ -231,6 +267,10 @@ section .button button:hover{
     .skills .content{
         width: 90%;
     } /*grupo referente a minha parte do código skills*/
+}
+.services .content{
+    width: 90%;
+
 }
 
 @media (max-width: 1090px){
@@ -246,10 +286,13 @@ section .button button:hover{
 
     .about .about-details .left{
         width: 90%;
-        margin: 40px 0 ;
+        margin: 40px 0;
     }
 }
-
+.services .boxes .box{
+    width: calc(100% / 2 - 20px);
+}
+  
 @media (max-width: 971px){
     .about .about-details .right .img{
         height: 350px;
