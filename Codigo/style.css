@@ -1,5 +1,5 @@
 /* Google Font CDN Link */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display+swa');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display+swap');
 
     
 
@@ -133,12 +133,8 @@ nav .menu-btn{
 
 /*About Me Section CSS*/
 /*Those element where we need to apply same  css their i will select "Section Tag" and "Class" Directly*/
-.about .content{
-    width: 80%;
-    margin: 40px auto;
-    font-family: 'Poppins' ,  sans-serif;
-}
-section .content{
+
+section .content{/*troquei para section conforme em video*/
     width: 80%;
     margin: 40px auto;
     font-family: 'Poppins' , sans-serif;
@@ -310,20 +306,6 @@ section .button button:hover{
     }
 }
 
-.skills .skills-details{
-    flex-direction: column;
-    align-items:  center;
-    justify-content: space-between;
-}
-
-.skills .skills-details .left{
-    width:  90%;
-}
-
-.skills .skills-details .boxes{
-    width:  90%;
-    margin: 40px 0;
-}
 
 /*My Skills CSS*/
 .skills{
@@ -331,60 +313,62 @@ section .button button:hover{
 }
 
 .skills .content{
-    padding:  40px 0;
+    padding: 40px 0;
 }
 
-.skills .skills-details{
+.skills .skill-details{
     display:  flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.skills .skills-details .left{
+.skills .skill-details .left{
     width: 50%;
     text-align: justify;
 }
 
-.skills .skills-details .left .experience{
+.skills .skill-details .left .experience{
     display: flex;
     align-items:  center;
 }
 
-.skills .skills-details .left .experience .num{
+.skills .skill-details .left .experience .num{
     font-size: 80px;
     color: #0E2431;
-    font-weight: 500;
+    font-weight: 1000;
 }
 
-.skills .skills-details .left .experience .exp{
+.skills .skill-details .left .experience .exp{
     font-size: 18px;
     color: #0E2431;
     font-weight: 500;
 }
 
 
-.skills-details .left p{
+.skill-details .left p{
     color: #0E2431;
+    text-align: justify;;
 }
 
-.skills .skills-details .boxes{
+
+.skills .skill-details .boxes{
     width: 45%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.skills .skills-details .boxes .box{
+.skills .skill-details .boxes .box{
     width: calc(100% / 2 -20px);
 }
 
-.skills-details .boxes .box .topic{
+.skill-details .boxes .box .topic{
     font-size: 20px;
     font-weight: 500;
     color: #4070f4;
 }
 
-.skills-details .boxes .box .num{
+.skill-details .boxes .box .num{
     font-size: 60px;
     font-weight: 500;
     color: #4070f4;
