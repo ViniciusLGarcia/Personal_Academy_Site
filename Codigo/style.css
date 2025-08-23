@@ -1,16 +1,18 @@
 /* Google Font CDN Link */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display+swap');
-
-    
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display+swap');*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
 
 /* Navigation Menu CSS */
 nav{
     position: fixed;
     width: 100%;
     padding: 20px 0;
-    font-family: 'Ubuntu' , sans-serif;
-    transition: all 0.4s ease;
-    z-index: 998; /*parte que inseri*/
+    font-family: 'Ubuntu', sans-serif;
 }
 nav.sticky{
     padding: 13px 0;
@@ -22,44 +24,86 @@ nav .navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-}    
+}
 nav .navbar .logo a{
     font-size: 40px;
     font-weight: 500;
-    color: #4070F4;
-} 
+    color:#4070F4;
+
+}
 nav.sticky .navbar .logo a{
     color: #FFF;
-}  
+}
 nav .navbar .menu{
     display: flex;
+
 }
 nav .navbar .menu li{
     margin: 0 8px;
     list-style: none;
-}    
+}
 .navbar .menu li a{
     font-size: 18px;
     font-size: 500;
     color: #0E2431;
-    transition: all 0.3s ease;
 }
-.navbar .menu li a:hover{
-    color: #4070f4;
-}    
 nav.sticky .navbar .menu li a{
-    color: #FFF;
-}  
-nav.sticky .navbar .menu li a:hover{
-    color: #0E2431;
-}      
+     color: #FFF;
+}
 .navbar .media-icons a{
     font-size: 18px;
     margin: 0 6px;
-    color: #4070F4
+    color: #4070F4;
+
 }
-nav.sticky .navbar .media-icons a{
+
+/*Side Navigation Menu Button*/
+
+nav .menu-btn,
+.navbar .cancel-btn{
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    right: 30px;
+    top: 20px;
+}
+nav .menu-btn{
+    color: #4070F4;
+
+}
+
+/* Responsive Media Query CSS*/
+@media (max-width: 750px){
+    nav .navbar .menu{
+    position: absolute;
+    left: 100%;
+    top: 0;
+    height: 100vh;
+    max-width: 400px;
+    width: 100%;
+    background: #4070F4;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    transition: all 0.5sec ease;
+
+    }
+    nav .navbar .active .menu{
+        left: 0;
+    }
+   .navbar .menu li a{
+    font-size: 23px;
+    display: block;
+    margin: 10px 0 ;
     color: #FFF;
+
+
+    }
+    .navbar .media-icons a{
+        display: none;
+
+    }
+    
 }
 /* Side Navigation Menu Button CSS */
 nav .menu-btn,
@@ -195,7 +239,7 @@ section .topic{
     font-size: 25px;
     font-weight: 500;
     color: #0E2431;
-    margin-bottom: 10px ;
+    margin-bottom: 10px;
 }
 .about .about-details .left p{
     color: #0E2431;
