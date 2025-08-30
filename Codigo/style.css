@@ -62,7 +62,7 @@ nav .navbar .menu li{
     color: #0E2431;
 }
 nav.sticky .navbar .menu li a{
-     color: #FFF;
+    color: #FFF;
 }
 
 .navbar .media-icons a{
@@ -115,7 +115,7 @@ nav.sticky .menu-btn{
     nav .navbar .active .menu{
         left: 0;
     }
-   .navbar .menu li a{
+    .navbar .menu li a{
     font-size: 23px;
     display: block;
     margin: 10px 0 ;
@@ -424,7 +424,6 @@ footer .text span a:hover{
     width: 90%;
 }
 
-  
 @media (max-width: 971px){
     .about .about-details .right .img{
         height: 350px;
