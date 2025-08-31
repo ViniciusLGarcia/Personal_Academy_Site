@@ -22,11 +22,12 @@
     border-radius: 12px;
 }
 /* Navigation Menu CSS */
-nav{
+nav {
     position: fixed;
     width: 100%;
     padding: 20px 0;
     font-family: 'Ubuntu', sans-serif;
+    z-index: 1000; /* garante que fique sempre por cima */
 }
 nav.sticky{
     padding: 13px 0;
