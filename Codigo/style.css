@@ -127,9 +127,7 @@ nav.sticky .menu-btn{
 
     }
     .navbar .media-icons a{
-        display: none;
-
-    }
+        display: none;}
     
 }
 /* Side Navigation Menu Button CSS */
@@ -531,16 +529,26 @@ footer .text span a:hover{
 }
 
 .skills .skill-details{
-    display:  flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
+/*
 .skills .skill-details .left{
-    width: 50%;
+    width: 35%;
     text-align: justify;
 }
+*/
 
+.skills .skill-details .left{
+    background: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente escuro para legibilidade */
+    padding: 18px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 45%; /* Reduz a largura para não ocupar todo o espaço */
+    margin-right: 5%; /* Cria um espaçamento à esquerda, movendo a caixa para a direita */
+}
+/* TIrei a info sobre anos de experiência
 .skills .skill-details .left .experience{
     display: flex;
     align-items:  center;
@@ -556,7 +564,7 @@ footer .text span a:hover{
     font-size: 18px;
     color: #f1d98f;
     font-weight: 500;
-}
+}*/
 
 
 .skill-details .left p{
@@ -564,7 +572,7 @@ footer .text span a:hover{
     text-align: justify;;
 }
 
-
+/* ANTIGA BOXES
 .skills .skill-details .boxes{
     width: 45%;
     display: flex;
@@ -586,4 +594,117 @@ footer .text span a:hover{
     font-size: 60px;
     font-weight: 500;
     color: #f1d98f;
+}*/
+
+/* Timeline CSS para a Seção Skills */
+.skills .boxes {
+    position: relative; /* Para posicionar a linha absoluta */
+    width: 100%;
+    max-width: 600px; /* Limita a largura para centralizar */
+    margin: 0 auto; /* Centraliza a timeline */
+    padding: 20px 0;
+}
+
+.skills .timeline-line {
+    position: absolute;
+    left: 20px; /* Alinha com os marcadores */
+    top: 0;
+    bottom: 0;
+    width: 2px; /* Espessura da linha */
+    background: linear-gradient(to bottom, #f8bb30, #f1d98f); /* Gradiente amarelo para combinar com o tema */
+    z-index: 1;
+}
+
+.skills .box {
+    position: relative;
+    display: flex;
+    align-items: flex-start; /* Alinha o topo dos itens */
+    margin-bottom: 40px; /* Espaçamento entre itens */
+    padding: 0 0 0 60px; /* Espaço à esquerda para o marcador */
+    width: 100%;
+    background: none; /* Remove sombras/box de antes */
+    border: none;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.skills .box:hover {
+    transform: translateX(10px); /* Efeito hover: move levemente para a direita */
+    z-index: 2; /* Por cima da linha */
+}
+
+.skills .timeline-marker {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background: #f8bb30; /* Fundo amarelo */
+    border: 3px solid #33373a; /* Borda escura para contraste */
+    border-radius: 50%; /* Círculo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2; /* Por cima da linha */
+    color: #33373a; /* Cor do ícone */
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.skills .box:hover .timeline-marker {
+    background: #33373a;
+    color: #f8bb30;
+    border-color: #f8bb30;
+}
+
+.skills .timeline-content {
+    background: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente escuro para legibilidade */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+.skills .timeline-content .num {
+    font-size: 18px;
+    font-weight: 600;
+    color: #f8bb30; /* Data em amarelo */
+    margin-bottom: 5px;
+}
+
+.skills .timeline-content .topic {
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff; /* Título em branco */
+    margin-bottom: 5px;
+}
+
+.skills .timeline-content p {
+    font-size: 14px;
+    color: #f1d98f; /* Descrição em amarelo claro */
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Responsividade: Em mobile, simplifica para lista sem linha */
+@media (max-width: 750px) {
+    .skills .timeline-line {
+        display: none; /* Esconde a linha em telas pequenas */
+    }
+    
+    .skills .box {
+        padding-left: 0; /* Remove padding esquerdo */
+        flex-direction: column; /* Empilha marcador e conteúdo */
+        margin-bottom: 30px;
+        text-align: center; /* Centraliza em mobile */
+    }
+    
+    .skills .timeline-marker {
+        position: static; /* Remove posicionamento absoluto */
+        margin: 0 auto 10px; /* Centraliza o marcador */
+    }
+    
+    .skills .timeline-content {
+        text-align: left; /* Mantém texto alinhado à esquerda no conteúdo */
+    }
 }
