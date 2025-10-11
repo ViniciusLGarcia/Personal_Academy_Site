@@ -157,13 +157,14 @@ nav .menu-btn{
             rgba(30, 31, 32, 0.945), /* #3b3e41 intermediário */
             rgba(138, 139, 140, 0.705)/* #8a8b8c mais suave */
         ),
-            url(../Codigo/fototeste.png) no-repeat;
+            url(../Codigo/imagens/Carlos_Andrea_Capa.jpg) no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
     background-color: #33373a;
 }
+
 .home .home-content{
     height: 100%;
     width: 90%;
@@ -172,20 +173,24 @@ nav .menu-btn{
     flex-direction: column;
     justify-content: center;
 }
+
 .home .text .text-one{
     font-size: 25px;
     color: #ffffff; 
 }
+
 .home .text .text-two{
     font-size: 75px; 
     font-weight: 600;
     margin-left: -3px;
     color: #ffffff;
 }
+
 .home .text .text-three{
     font-size: 40px;
     color: #ffffff;
 }
+
 .home .text .text-four{
     font-size: 23px;
     margin: 5px 0;
