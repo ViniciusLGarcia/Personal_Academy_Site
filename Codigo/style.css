@@ -265,8 +265,11 @@ section .title span::after{
 
 }
 .about .about-details .right{
-    width: 45%;
-
+    max-width: 100%; /* A imagem nunca será maior que o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Se o contêiner tiver altura definida, a imagem vai cobrir sem distorcer */
+    border-radius: 12px;
+    display: block; /* Remove possíveis espaços extras abaixo da imagem */  
 }
 .about .about-details .right .img{
     height: 400px;
