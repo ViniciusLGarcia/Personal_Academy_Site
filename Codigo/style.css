@@ -42,8 +42,20 @@ nav .navbar{
     align-items: center;
     justify-content: space-between;
 }
+
+nav .navbar .logo {
+    display: flex;
+    align-items: center; /* Alinha o logo e o texto verticalmente no centro */
+}
+
+.logo-img {
+    height: 100px;       /* Ajuste a altura conforme necessário */
+    width: auto;        /* Mantém a proporção da imagem */
+    margin-right: 15px; /* Cria um espaço entre o logo e o texto */
+}
+
 nav .navbar .logo a{
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 500;
     color:#ffffff;
 
@@ -280,6 +292,7 @@ section .title span::after{
 }
 .about .about-details .left{
     width: 55%;
+    padding-left: 40px;
 }
 
 section .topic{
