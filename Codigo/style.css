@@ -249,23 +249,24 @@ section .title{
     justify-content: center;
     margin-bottom: 40px;
 }
-section .title span{
+section .title span {
     font-size: 30px;
-    font-weight: 600px;
-    padding-bottom: 4px;
-    position: space-between;
+    font-weight: 600; /* Removido 'px' daqui */
+    padding-bottom: 10px; /* Aumenta o espaçamento para a linha */
+    position: relative; /* Essencial para o ::after se posicionar corretamente */
     color: #ffffff;
-
+    display: inline-block; /* Permite que o span tenha width e padding controláveis */
 }
 
-section .title span::after{
+section .title span::after {
     content: '';
-    position: space-between;
-    left: 0;
-    bottom: 0;
-    height: 3px;
-    width: 100%;
-    background:#f8bb30;
+    position: absolute; /* Corrigido: deve ser 'absolute' */
+    left: 50%;          /* Começa no centro */
+    bottom: 0;          /* Alinhado na parte inferior do span */
+    height: 3px;        /* Espessura da linha */
+    width: 70%;         /* Largura da linha (ajuste conforme o gosto) */
+    background: #f8bb30; /* Cor da linha */
+    transform: translateX(-50%); /* Centraliza a linha */
 }
 
 section .title span::after{
